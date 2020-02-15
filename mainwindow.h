@@ -20,6 +20,8 @@ private slots:
 
     void on_randomBButton_clicked();
 
+    void on_lineEdit_textChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
 };

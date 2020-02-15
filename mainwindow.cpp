@@ -24,3 +24,8 @@ void MainWindow::on_randomBButton_clicked()
 {
     ui->lineEdit_2->setText(randomizer().getRandom());
 }
+
+void MainWindow::on_lineEdit_textChanged(const QString &arg1)
+{
+
+}
