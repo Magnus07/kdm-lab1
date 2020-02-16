@@ -1,3 +1,6 @@
+/* ЗАГОЛОВНИЙ ФАЙЛ ГОЛОВНОГО ВІКНА
+ * БУЛО СТВОРЕНО АВТОМАТИЧНО QT */
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -16,11 +19,14 @@ public:
     ~MainWindow();
 
 private slots:
+    // Деякі події на головному вікні(натискання кнопки та ін.)
     void on_randomAButton_clicked();
 
     void on_randomBButton_clicked();
 
     void on_lineEdit_textChanged(const QString &arg1);
+
+    void on_lineEdit_2_textChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;

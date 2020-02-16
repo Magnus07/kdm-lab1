@@ -1,3 +1,6 @@
+/* АВТОМАТИЧНО ЗГЕНЕРОВАНИЙ КОД */
+
+
 #include "mainwindow.h"
 
 #include <QApplication>
