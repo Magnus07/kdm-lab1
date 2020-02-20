@@ -28,7 +28,12 @@ private slots:
 
     void on_lineEdit_2_textChanged(const QString &arg1);
 
+    void resizeEvent(QResizeEvent *event);
+
+    void drawCircles(QStringList list1, QStringList list2);
+
 private:
     Ui::MainWindow *ui;
+    void lineEditWorker();
 };
 #endif // MAINWINDOW_H
