@@ -87,9 +87,17 @@ void MainWindow::drawCircles(QStringList list1, QStringList list2)
     ui->pushButton->setGeometry(w*0.2,h*0.25,r*list1.length()/3.5,r*list1.length()/3.5);
     ui->pushButton_2->setGeometry(w*0.45,h*0.25,r*list2.length()/3.5,r*list2.length()/3.5);
 
+    if (ui->lineEdit_4->text() != "")
+    {
+        while(ui->pushButton->x() + ui->pushButton->width() < ui->pushButton_2->x()+30)
+        {
+            ui->pushButton->setGeometry(ui->pushButton->x(),ui->pushButton->y(), ui->pushButton->width()+2,ui->pushButton->height()+2);
+        }
+    }
+
     // встановлення стилів
     ui->pushButton->setStyleSheet("background-color: rgb(115, 210, 22);border-radius: " + QString::number(ui->pushButton->width()/2) + ";");
-    ui->pushButton_2->setStyleSheet("background-color: rgb(52, 101, 164);border-radius: " + QString::number(ui->pushButton_2->width()/2) + ";");
+    ui->pushButton_2->setStyleSheet("background-color: rgba(52, 101, 164,75%);border-radius: " + QString::number(ui->pushButton_2->width()/2) + ";");
 }
 
 
@@ -107,4 +115,39 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 
 //    ui->pushButton->setGeometry((this->width() - ui->pushButton->x())/10,(this->height() - ui->pushButton->y())/2,r*2,r*2);
 //    ui->pushButton_2->setGeometry((this->width() - ui->pushButton_2->x())/1.5,(this->height() - ui->pushButton_2->y())/2,r*2,r*2);
+}
+
+void MainWindow::on_lineEdit_3_cursorPositionChanged(int arg1, int arg2)
+{
+    // встановлення стилів
+    ui->pushButton->setStyleSheet("background-color: rgb(255, 0, 0);border-radius: " + QString::number(ui->pushButton->width()/2) + ";");
+    ui->pushButton_2->setStyleSheet("background-color: rgb(255, 0, 0);border-radius: " + QString::number(ui->pushButton_2->width()/2) + ";");
+}
+
+void MainWindow::on_lineEdit_4_cursorPositionChanged(int arg1, int arg2)
+{
+    // встановлення стилів
+    ui->pushButton->setStyleSheet("background-color: rgba(255, 0, 0,50%);border-radius: " + QString::number(ui->pushButton->width()/2) + ";");
+    ui->pushButton_2->setStyleSheet("background-color: rgba(255, 0, 0,50%);border-radius: " + QString::number(ui->pushButton_2->width()/2) + ";");
+}
+
+void MainWindow::on_lineEdit_5_cursorPositionChanged(int arg1, int arg2)
+{
+    // встановлення стилів
+    ui->pushButton->setStyleSheet("background-color: rgb(255, 0, 0);border-radius: " + QString::number(ui->pushButton->width()/2) + ";");
+    ui->pushButton_2->setStyleSheet("background-color: rgb(52, 101, 164);border-radius: " + QString::number(ui->pushButton_2->width()/2) + ";");
+}
+
+void MainWindow::on_lineEdit_6_cursorPositionChanged(int arg1, int arg2)
+{
+    // встановлення стилів
+    ui->pushButton->setStyleSheet("background-color: rgb(52, 101, 164);position:absolute;border-radius: " + QString::number(ui->pushButton->width()/2) + ";");
+    ui->pushButton_2->setStyleSheet("background-color: rgba(255,0,0,50%);border-radius: " + QString::number(ui->pushButton_2->width()/2) + ";");
+}
+
+void MainWindow::on_lineEdit_7_cursorPositionChanged(int arg1, int arg2)
+{
+    // встановлення стилів
+    ui->pushButton->setStyleSheet("background-color: rgba(255, 0, 0,50%);border-radius: " + QString::number(ui->pushButton->width()/2) + ";");
+    ui->pushButton_2->setStyleSheet("background-color: rgba(255, 0, 0,50%);border-radius: " + QString::number(ui->pushButton_2->width()/2) + ";");
 }

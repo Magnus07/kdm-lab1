@@ -32,6 +32,16 @@ private slots:
 
     void drawCircles(QStringList list1, QStringList list2);
 
+    void on_lineEdit_3_cursorPositionChanged(int arg1, int arg2);
+
+    void on_lineEdit_4_cursorPositionChanged(int arg1, int arg2);
+
+    void on_lineEdit_5_cursorPositionChanged(int arg1, int arg2);
+
+    void on_lineEdit_6_cursorPositionChanged(int arg1, int arg2);
+
+    void on_lineEdit_7_cursorPositionChanged(int arg1, int arg2);
+
 private:
     Ui::MainWindow *ui;
     void lineEditWorker();
