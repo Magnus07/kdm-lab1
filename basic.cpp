@@ -1,4 +1,4 @@
-/* РЕАЛІЗАЦІЯ ФУНКЦІЙ ІЗ ЗАГОЛОВНОГО
+﻿/* РЕАЛІЗАЦІЯ ФУНКЦІЙ ІЗ ЗАГОЛОВНОГО
  ФАЙЛУ. ОСНОВНА ФУНКЦІОНАЛЬНІСТЬ ПРОГРАМИ */
 
 
@@ -117,6 +117,22 @@ QString SymmetricDifference(QStringList list1, QStringList list2)
     // повернення значення першого масиву, при цьому, після кожного значення проставляється " "
     // і устворюється не масив, а текствоий рядок
     return list1.join(" ");
+}
+
+
+bool AintoB(QStringList list1, QStringList list2)
+{
+    short counter = 0;
+    for (short i = 0; i < list1.length();i++)
+    {
+        if (list2.indexOf(list1[i]) != -1)
+        {
+            counter++;continue;
+        } else
+            return false;
+    }
+    if (counter == list1.length())
+        return true;
 }
 
 

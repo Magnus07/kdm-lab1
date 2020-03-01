@@ -1,4 +1,4 @@
-/* БІБЛІОТЕКА З БАЗОВИМИ ФУНКЦІЯМИ,
+﻿/* БІБЛІОТЕКА З БАЗОВИМИ ФУНКЦІЯМИ,
  * ЯКІ БУДУТЬ НЕОБХІДНИМИ ПРОТЯГОМ
  * УСЬОГО ЧАСУ КОРИСТУВАННЯ ПРОГРАМОЮ */
 
@@ -13,6 +13,7 @@ QString Union(QStringList text1, QStringList text2);
 QString DifferenceAB(QStringList text1, QStringList text2);
 QString Intersection(QStringList text1, QStringList text2);
 QString SymmetricDifference(QStringList text1, QStringList text2);
+bool AintoB(QStringList list1, QStringList list2);
 
 
 #endif // BASIC_H
