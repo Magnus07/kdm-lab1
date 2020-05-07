@@ -1,4 +1,4 @@
-﻿/* РЕАЛІЗАЦІЯ ФУНКЦІЙ ГОЛОВНОГО ВІКНА */
+/* РЕАЛІЗАЦІЯ ФУНКЦІЙ ГОЛОВНОГО ВІКНА */
 
 #include <math.h>
 #include "mainwindow.h"
@@ -108,7 +108,7 @@ void MainWindow::drawCircles(QStringList list1, QStringList list2)
         // встановлення значення
         ui->label_9->setText(Intersection(list1,list2));
     }
-
+    ui->label_11->text()='U';
     // встановлення стилів
     ui->pushButton->setStyleSheet("background-color: rgb(115, 210, 22);border-radius: " + QString::number(ui->pushButton->width()/2) + ";");
     ui->pushButton_2->setStyleSheet("background-color: rgba(52, 101, 164,75%);border-radius: " + QString::number(ui->pushButton_2->width()/2) + ";");

@@ -41,6 +41,13 @@
          <height>100</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">border-radius:150px;
 background-color: rgb(115, 210, 22);</string>
@@ -63,6 +70,13 @@ background-color: rgb(115, 210, 22);</string>
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="styleSheet">
         <string notr="true">border-radius:150px;
@@ -87,8 +101,28 @@ background-color: rgb(52, 101, 164);</string>
          <height>22</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="inputMethodHints">
         <set>Qt::ImhNone</set>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>565</y>
+         <width>55</width>
+         <height>21</height>
+        </rect>
        </property>
        <property name="text">
         <string/>
@@ -252,7 +286,7 @@ background-color: rgb(52, 101, 164);</string>
      <x>0</x>
      <y>0</y>
      <width>840</width>
-     <height>27</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
